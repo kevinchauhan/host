@@ -57,14 +57,17 @@ strong {
 }
 /* ------------------------- sidebar start --------------------- */
 aside {
+  position: sticky;
+  top: 0;
   height: 100vh;
-  width: 280px;
-  margin-left: -280px;
+  min-width: 230px;
+  max-width: 260px;
+  margin-left: -230px;
   transition: all 0.5s;
   z-index: 9999;
 }
 aside.active {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 aside a,
 aside i {
@@ -89,15 +92,6 @@ aside:hover::-webkit-scrollbar-thumb {
   background-color: rgb(255, 255, 255, 0.4);
   border-radius: 5px;
 }
-@media (width >= 568px) {
-  .sticky-sm-top {
-    position: sticky !important;
-  }
-  aside {
-    width: 320px;
-    margin-left: -320px;
-  }
-}
 /* ------------------------- sidebar end --------------------- */
 
 /* ------------------------ navbar start ------------------------ */
@@ -119,6 +113,17 @@ input[type="search"]:focus {
 }
 .nav-img .dropdown-menu[data-bs-popper] {
   left: -32px;
+}
+@media (width<= 768px) {
+  .navbar {
+    width: 100vw !important;
+  }
+  .content {
+    width: 100vw;
+  }
+  main {
+    overflow-x: auto;
+  }
 }
 /* ------------------------ navbar end ------------------------ */
 
