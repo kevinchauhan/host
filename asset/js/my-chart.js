@@ -26,7 +26,7 @@ new Chart(ctx, {
         display:false,
       }
     },
-    // responsive:true,
+    responsive:true,
     scales: {
       x: {
         stacked: true,

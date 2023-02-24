@@ -34,10 +34,10 @@
   background-color: rgb(229, 165, 75) !important;
 }
 .bg-danger {
-  background-color: #dc3545;
+  background-color: #dc3545 !important;
 }
 .bg-danger-light {
-  background-color: rgba(217, 83, 79, 0.175);
+  background-color: rgba(217, 83, 79, 0.175) !important;
 }
 .text-primary {
   color: rgb(var(--color-primary)) !important;
@@ -128,6 +128,10 @@ input[type="search"]:focus {
   main {
     overflow-x: auto;
   }
+}
+.content{
+    height: 88vh;
+    overflow-y: auto;
 }
 /* ------------------------ navbar end ------------------------ */
 
@@ -235,6 +239,10 @@ input[type="search"]:focus {
     height: 250px !important;
   }
 }
+.table-badge{
+    width: 15px;
+    height: 15px;
+}
 /* ----------------------- calender-sec end --------------------- */
 
 /* --------------------------------- chat-box start -------------------- */
@@ -261,3 +269,17 @@ input[type="search"]:focus {
 }
 /* --------------------------------- analytics end -------------------- */
 /* --------------------------------- analytics end -------------------- */
+
+/* --------------------------------- task start -------------------- */
+/* --------------------------------- task start -------------------- */
+.grab .bg-tertiary{
+    cursor:grab;
+}
+.sortable-chosen {
+    box-shadow: 8px 8px 32px #e1e1e1;
+}
+.sortable-drag {
+    opacity: 0;
+}
+/* --------------------------------- task end -------------------- */
+/* --------------------------------- task end -------------------- */
